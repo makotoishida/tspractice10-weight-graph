@@ -54,6 +54,7 @@ footer a {
 .data-table {
   width:fit-content;
   margin: 1rem auto;
+  font-size: medium;
 }
 
 .left {
