@@ -2,4 +2,4 @@
 
 ## Live DEMO
 
-https://makotoishida.github.io/tspractice10-clock/
+https://makotoishida.github.io/tspractice10-weight-graph/
