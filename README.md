@@ -1,4 +1,4 @@
-# tspractice10-clock
+# tspractice10-weight-graph
 
 ## Live DEMO
 
