@@ -41,7 +41,7 @@ const Dates = (data: WeightData) => {
 
 const VerticalScale = (data: WeightData) => {
   const dx = graphW / data.weights.length
-  return data.weights.map((i, ix) => {
+  return data.weights.map((_, ix) => {
     const x = ix * dx
     return svg`<line x1=${x} y1=${0} x2=${x} y2=${graphH} stroke="#ccc" stroke-dasharray="2 2" />`
   })
