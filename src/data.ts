@@ -1,4 +1,4 @@
-import type { WeightData } from './types'
+import type { Weight, WeightData } from './types'
 
 const data: WeightData = {
   name: 'Taro Yamada',
@@ -11,7 +11,7 @@ const data: WeightData = {
     { date: '2022-01-07', weight: 60.15 },
     { date: '2022-01-09', weight: 60.2 },
     { date: '2022-01-10', weight: 60.2 },
-    { date: '2022-01-11', weight: 60.5 },
+    { date: '2022-01-11', weight: 63.1 },
     { date: '2022-01-12', weight: 59.8 },
     { date: '2022-01-13', weight: 59.45 },
     { date: '2022-01-15', weight: 59.1 },
@@ -30,6 +30,12 @@ const data: WeightData = {
     { date: '2022-01-31', weight: 58.2 },
     { date: '2022-02-01', weight: 58.6 },
   ],
+}
+
+export function getRange(weights: Weight[]) {
+  const min = Math.min(...weights.map((i) => i.weight))
+  const max = Math.max(...weights.map((i) => i.weight))
+  return { min, max }
 }
 
 export default data
